@@ -1,0 +1,51 @@
+{
+  "name": "modbot",
+  "version": "3.4.4",
+  "description": "Discord Bot for the Aternos Discord server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aternosorg/modbot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aternosorg/modbot/issues"
+  },
+  "homepage": "https://github.com/aternosorg/modbot#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^10.4.0",
+    "@google-cloud/vision": "^3.1.2",
+    "@googleapis/youtube": "^8.0.2",
+    "diff": "^5.1.0",
+    "discord-api-types": "^0.37.37",
+    "discord.js": "^14.12.1",
+    "fuse.js": "^6.6.2",
+    "got": "^12.6.0",
+    "mysql2": "^3.2.0",
+    "string-similarity": "^4.0.4",
+    "turndown": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "eslint": "^8.36.0",
+    "eslint-plugin-jsdoc": "^40.1.0",
+    "eslint-plugin-json": "^3.1.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ],
+    "*.json": [
+      "eslint --fix"
+    ]
+  }
+}
